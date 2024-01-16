@@ -1,0 +1,9 @@
+body { 
+    background-color: #DBF9FC; 
+    }
+ .underlined {
+    text-decoration: underline;
+    }
+ .focused-element {
+    background-color: #a0c1e8; 
+}

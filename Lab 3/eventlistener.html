@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lab 3 - Javascript Events </title>
+    <link rel="stylesheet" type="text/css" href="EL.css">
+</head>
+<body>
+    <h1> Soy Mates Sushi </h1>
+    <fieldset>
+        <legend> Select Your Desired Sushi Roll(s) </legend>
+        <div id="sushiRolls"> </div>
+           
+            <div>
+            <input type="checkbox" id="sushi1" name="sushi"  value="13.99" />
+            <label for="sushi1 "> Playboy Roll - $13.99 </label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="sushi3" name="sushi" value="11.99" />
+                <label for="sushi3"> OMG Roll - $11.99 </label>
+            </div>
+            
+            <div>
+            <input type="checkbox" id="sushi2" name="sushi" value="9.99" />
+            <label for="sushi2">Crunchy Roll - $9.99 </label>
+            </div>
+
+            <div>
+            <input type="checkbox" id="sushi4" name="sushi" value="7.99" />
+            <label for="sushi4"> California Roll - $7.99</label>
+            </div>
+      
+            <div>
+            <input type="checkbox" id="sushi5" name="sushi" value="9.99"  />
+            <label for="sushi5"> Spicy Salmon Roll - $9.99 </label>
+            </div>
+            <br>
+            <button type="button" id="total" >
+                Calculate Total 
+            </button>
+            <p>Total Cost: <span id="totalCost">$0.00</span></p>
+        </div>
+    </fieldset>
+    <p> Please enter your full name </p>
+    <input type="text" id="fullName" name = "name" placeholder = "John Doe">
+    <p> Please enter your email </p>
+    <input type="text" id="email" name ="email" placeholder = "JohnDoe@gmail.com">
+    <p id = "sentenceConfirm"> Click here to start your orders' preparation </p>
+    <script src="EL.js" ></script>
+</body>
+</html>
+
+
+

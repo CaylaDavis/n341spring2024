@@ -1,0 +1,77 @@
+
+<!-- 
+TITLE: Decisons, Loops & DOM 
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 25 September 2023
+PURPOSE: Expand upon Lab 1 with decisions and loops. Use DOM to update the page. 
+LAST MODIFIED ON: 25 September 2023
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi Restaurant </title>
+    <link rel="stylesheet" href="sushi.css">
+</head>
+<body>
+    <h1> Macayla's Sushi </h1>
+<fieldset>
+    <legend> Select Your Desired Sushi Roll(s) </legend>
+  <div>
+    <input type="checkbox" id="sushi1" name="sushi"  value="13.99" onclick = "customerTotal()" />
+    <label for="sushi1 "> Playboy Roll - $13.99 </label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="sushi2" name="sushi" value="9.99" onclick = "customerTotal()" />
+    <label for="sushi2">Crunchy Roll - $9.99 </label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="sushi3" name="sushi" value="11.99" onclick = "customerTotal()" />
+    <label for="sushi3"> OMG Roll - $11.99 </label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="sushi4" name="sushi" value="7.99" onclick = "customerTotal()" />
+    <label for="sushi4"> California Roll - $7.99</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="sushi5" name="sushi" value="9.99" onclick = "customerTotal()" />
+    <label for="sushi5"> Spicy Salmon Roll - $9.99 </label>
+  </div>
+  <br>
+    <button type="button" onclick="customerTotal()">
+        Submit
+    </button>
+    <br>
+    <input value="$0.00" readonly="readonly" type="text" id="total"/>
+    <div id = "specials"> </div>
+    <fieldset>
+        <Legend> Customer Info </Legend>
+        <p> Please enter your first and last name </p>
+        <input type="text" id="first" name=" first name" placeholder= "John">
+        <input type="text" id="last" name="last name" placeholder= "Doe">
+        <div id = "question"> </div>
+        <input type="text" id="wasabi" name="pieces" placeholder= "# of wasabi packages">
+        <div id = "package"></div>
+        
+
+    </fieldset>
+    <div id = "order"> </div>
+    <div id= "day"> </div>
+    <div id="sw"> </div>
+
+    <script src="labs/sushi.js" ></script> 
+
+</fieldset>
+
+    
+</body>
+
+</html>
