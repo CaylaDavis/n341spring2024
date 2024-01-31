@@ -1,0 +1,36 @@
+/*
+TITLE: Lab 1 - Expressions,Functions, and Objects 
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 30 January 2024
+PURPOSE: To publish a web page that meets the requirements of the lab and has a designated theme 
+Theme: Menu & order form for a sushi restaurant.  
+LAST MODIFIED ON: 30 January 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications 
+*/
+body {
+    background-color: beige;
+}
+
+#pageTitle {
+    font-size: 36px; /* Changes size of font */
+    color: darkred; /* Dark red color */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* center text */
+}
+
+#welcome { 
+    text-align: center;
+}
+
+#menuTitle{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+#specialTitle{
+    font-size: 20px;
+    font-weight: bold;
+    color:darkred;
+}
