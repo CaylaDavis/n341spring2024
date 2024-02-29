@@ -1,0 +1,14 @@
+body {
+    background-color: beige;
+}
+
+#pageTitle {
+    font-size: 36px; /* Changes size of font */
+    color: darkred; /* Dark red color */
+    font-weight: bold; /* Make the font bold */
+    text-align: center; /* center text */
+}
+
+#welcome { 
+    text-align: center;
+}

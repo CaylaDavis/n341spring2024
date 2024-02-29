@@ -1,3 +1,14 @@
+/*
+TITLE: Lab 3 Javascript Events
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 28 February 2024
+PURPOSE: To publish a web page that meets the requirements of the lab and has a designated theme Lab 3
+Theme: Menu & order form for a sushi restaurant.  
+LAST MODIFIED ON: 28 February 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications
+*/
 body { 
     background-color: #DBF9FC; 
     }
@@ -5,5 +16,11 @@ body {
     text-decoration: underline;
     }
  .focused-element {
-    background-color: #a0c1e8; 
+    background-color: orange;
+   } 
+.blurred-element {
+   background-color: blueviolet;
+   }
+#discountMessage {
+   font-weight: bold;
 }

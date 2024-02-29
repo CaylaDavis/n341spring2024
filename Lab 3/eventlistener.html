@@ -1,3 +1,14 @@
+<!--
+TITLE: Lab 3 Javascript Events
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 28 February 2024
+PURPOSE: To publish a web page that meets the requirements of the lab and has a designated theme Lab 3
+Theme: Menu & order form for a sushi restaurant.  
+LAST MODIFIED ON: 28 February 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,49 +19,52 @@
 </head>
 <body>
     <h1> Soy Mates Sushi </h1>
-    <fieldset>
-        <legend> Select Your Desired Sushi Roll(s) </legend>
-        <div id="sushiRolls"> </div>
-           
-            <div>
-            <input type="checkbox" id="sushi1" name="sushi"  value="13.99" />
-            <label for="sushi1 "> Playboy Roll - $13.99 </label>
-            </div>
+    <div id="discountMessage"> </div>
+    <div id="ancestorEvent"></div>
+    <div id="parentDiv"> 
+        <fieldset>
+            <legend> Select Your Desired Sushi Roll(s) </legend>
+            <div id="sushiRolls"> </div>
+               
+                <div>
+                <input type="checkbox" id="sushi1" name="sushi"  value="13.99" />
+                <label for="sushi1 "> Playboy Roll - $13.99 </label>
+                </div>
 
-            <div>
-                <input type="checkbox" id="sushi3" name="sushi" value="11.99" />
-                <label for="sushi3"> OMG Roll - $11.99 </label>
-            </div>
-            
-            <div>
-            <input type="checkbox" id="sushi2" name="sushi" value="9.99" />
-            <label for="sushi2">Crunchy Roll - $9.99 </label>
-            </div>
+                <div>
+                    <input type="checkbox" id="sushi3" name="sushi" value="11.99" />
+                    <label for="sushi3"> OMG Roll - $11.99 </label>
+                </div>
+                
+                <div>
+                <input type="checkbox" id="sushi2" name="sushi" value="9.99" />
+                <label for="sushi2">Crunchy Roll - $9.99 </label>
+                </div>
 
-            <div>
-            <input type="checkbox" id="sushi4" name="sushi" value="7.99" />
-            <label for="sushi4"> California Roll - $7.99</label>
+                <div>
+                <input type="checkbox" id="sushi4" name="sushi" value="7.99" />
+                <label for="sushi4"> California Roll - $7.99</label>
+                </div>
+          
+                <div>
+                <input type="checkbox" id="sushi5" name="sushi" value="9.99"  />
+                <label for="sushi5"> Spicy Salmon Roll - $9.99 </label>
+                </div>
+                <br>
+                <button type="button" id="total" >
+                    Calculate Total 
+                </button>
+                <p>Total Cost: <span id="totalCost">$0.00</span></p>
             </div>
-      
-            <div>
-            <input type="checkbox" id="sushi5" name="sushi" value="9.99"  />
-            <label for="sushi5"> Spicy Salmon Roll - $9.99 </label>
-            </div>
-            <br>
-            <button type="button" id="total" >
-                Calculate Total 
-            </button>
-            <p>Total Cost: <span id="totalCost">$0.00</span></p>
-        </div>
-    </fieldset>
+        </fieldset>
+    </div>
     <p> Please enter your full name </p>
     <input type="text" id="fullName" name = "name" placeholder = "John Doe">
+    <div id="myForm"></div>
     <p> Please enter your email </p>
     <input type="text" id="email" name ="email" placeholder = "JohnDoe@gmail.com">
+    <p id = "firstKey"> </p>
     <p id = "sentenceConfirm"> Click here to start your orders' preparation </p>
     <script src="EL.js" ></script>
 </body>
 </html>
-
-
-
