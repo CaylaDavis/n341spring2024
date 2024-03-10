@@ -1,0 +1,5 @@
+1. Complie and run Ptreeprint.cpp in Tesla 
+
+2. You'll see a prompt asking for two numbers, `k1` and `k2`. Enter the values and press Enter.
+
+3. The program will display the numbers between the values you put for  `k1` and `k2` found in the file "input.txt".
