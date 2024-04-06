@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Selection</title>
+    <link rel="stylesheet" type="text/css" href="jquerysushi.css">
+</head>
+<body>
+    <h1>Soy Mates Sushi</h1>
+    <form id="order-form"></form>
+        <div class="menu-item">
+            <h2 class="menu-item-title">California Roll</h2>
+            <p class="menu-item-description">Crab, avocado, cucumber</p>
+            <p class="menu-item-price">$9.99</p>
+            <input type="checkbox" class="menu-item-checkbox" data-price="9.99">
+        </div>
+        <div class="menu-item">
+            <h2 class="menu-item-title">Salmon Nigiri</h2>
+            <p class="menu-item-description">Fresh salmon over rice</p>
+            <p class="menu-item-price">$11.99</p>
+            <input type="checkbox" class="menu-item-checkbox" data-price="11.99">
+        </div>
+        <div class="menu-item">
+            <h2 class="menu-item-title">Tuna Sashimi</h2>
+            <p class="menu-item-description">Thinly sliced raw tuna</p>
+            <p class="menu-item-price">$13.99</p>
+            <input type="checkbox" class="menu-item-checkbox" data-price="13.99">
+        </div>
+        <div class="menu-item">
+            <h2 class="menu-item-title">Spicy Tuna Roll</h2>
+            <p class="menu-item-description">Spicy tuna, avocado, cucumber</p>
+            <p class="menu-item-price">$10.99</p>
+            <input type="checkbox" class="menu-item-checkbox" data-price="10.99">
+        </div>
+    <p>Cost of item you clicked: <span id="total-cost">$0.00</span></p>
+
+    <div id="discount-message"></div>
+    <div id="thanks-message"></div>
+    <div id ="open-message"></div>
+    <div id="locationMessage"></div>
+    <!-- Requirement 4: Include the Google-hosted jQuery library before your JS file in your HTML.--> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="jquerysushi.js"></script>
+</body>
+</html>

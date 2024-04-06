@@ -1,0 +1,18 @@
+/*
+TITLE: jQuery
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 31 March 2024
+PURPOSE: To publish website displaying skills in jQuery
+Theme: Menu & order form for a sushi restaurant.  This assignment largely focuses on the menu's items/prices.
+LAST MODIFIED ON: 31 March 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications 
+*/
+.menu-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer; /* Change cursor to pointer to indicate clickable */
+}
+
