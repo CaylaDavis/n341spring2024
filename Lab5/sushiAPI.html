@@ -1,0 +1,99 @@
+<!-- 
+TITLE: APIs and Form Enhancement
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 14 April 2024
+PURPOSE: Explore APIs and Form Enhancement to create professional interactive web pages
+Theme: Menu & order form for a sushi restaurant. 
+LAST MODIFIED ON: 14 April 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications 
+--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 </title>
+    <link rel="stylesheet" type="text/css" href="sushiAPI.css">
+</head>
+<body>
+    <h1>Soy Mates Sushi</h1>
+    <label for="sushiSearch">Looking for a specific roll? Search here:</label>
+    <input type="text" id="sushiSearch">
+    <div id="accordion">
+        <h3>Menu</h3>
+        <div>
+            <p>This section contains our delicious sushi menu.</p>
+            <ul>
+                <li>California Roll</li>
+                <li>Crab Rangoon Roll </li>
+                <li>OMG Roll</li>
+                <li>Tuna Sashimi</li>
+                <li>Spicy Tuna Roll</li>
+                <li> Dragon Roll</li>
+                <li> Rainbow Roll</li>
+                <li> Philadelphia Roll</li>
+                <li> Tempura Roll</li>
+            </ul>
+        </div>
+        <h3>About Us</h3>
+        <div>
+            <p>Learn more about our sushi restaurant and our chefs.</p>
+            <p> We are dedicated to serving quality sushi rolls with the freshest ingredients! Our head chef, Michael Davis, has over 15 years of experience in Japanese cuisine!</p>
+        </div>
+        <h3>Contact</h3>
+        <div>
+            <p>Get in touch with us to place an order or ask questions.</p>
+            <p> Phone Number: (317)123-4567 Email: Yoursoymate@gmail.com</p>
+        </div>
+    </div>
+    <!-- Requirement 6: Include at least three of the following input fields: Used Email, Telphone, and Radio Buttons-->
+    <!-- Requirement 7: In your form, include the following:<form method="get"> Do not use method="post",submit button,reset button-->
+    <form id="orderForm" method="get">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="JaneDoe@gmail.com" required ><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="special-request">Special Request:</label>
+            <textarea id="special-request" name="special-request"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Details</legend>
+            <label>Choose your payment method:</label><br>
+            <input type="radio" id="credit" name="payment" value="credit">
+            <label for="credit">Credit Card</label><br>
+            <input type="radio" id="debit" name="payment" value="debit">
+            <label for="debit">Debit Card</label><br>
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal">PayPal</label><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <!--Requirement 8: Create an output area that is separate from the form on your page. This area should be blank until the user submits the form.-->
+    <div id="outputArea"></div>
+    <!--Requirement 3: Include the Google-hosted jQuery library before your JS file in your HTML-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="sushiAPI.js"></script>
+</body>
+</html>
+
+<!--
+Browser Testing Results:
+- Google Chrome: Form functions correctly, including validation and placeholder display. Note: Has it's own built in validation for email field as well outside of my placeholder
+- Safari: Form functions correctly here as well, including validation and placeholder display. Note: Has it's own built in validation for email field as well outside of my placeholder. This is different than the google chrome one. It simply says enter an email address when it is incorrect. Background color changes within textboxes also seem to be more noticable 
+- Microsoft Edge: Form functions correctly
+-->
+
+
