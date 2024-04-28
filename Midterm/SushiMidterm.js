@@ -104,6 +104,9 @@ totalButton.addEventListener("click", function() {
 // Requirement 12: Demonstrate the use of an if/else construct or switch statement with at least three case values and a default code block. 
 //Requirement 13: Demonstrate the use of at least two comparison operators
 //Requiremtn 14: Demonstrate the use of a logical operator 
+// Requirement 12: Demonstrate the use of an if/else construct or switch statement with at least three case values and a default code block. 
+//Requirement 13: Demonstrate the use of at least two comparison operators
+//Requiremtn 14: Demonstrate the use of a logical operator 
 function calculateDiscount(totalCost) {
     var discount;
     var discountMessage;

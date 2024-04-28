@@ -1,0 +1,107 @@
+<!--
+TITLE: Course Project - Final Submission 
+AUTHOR: Macayla C. Davis (MCD)
+CREATE DATE: 27 April 2024
+PURPOSE: To publish a web page that meets the requirements of the final and showcases the skills I've gained in the course.The JavaScript selections and event registrations from the Midterm Submission should be converted to jQuery. 
+Theme: Menu & order form for a sushi restaurant.  
+LAST MODIFIED ON: 27 April 2024
+LAST MODIFIED BY: Macayla C. Davis (MCD)
+MODIFICATION HISTORY:
+No modifications 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm for Sushi Course Project</title>
+    <link rel="stylesheet" href="SushiFinal.css">
+</head>
+<body>
+    <h1>Welcome to Roll & Savor</h1>
+    <div>
+        <label for="nameInput">Enter Your Name:</label>
+        <input type="text" id="nameInput">
+        <button id="submitName">Submit</button>
+    </div>
+    <div id="greetingMessage"></div>
+    <div id="totalPrice"></div>
+    <div id="sushiOutput"></div>
+    
+    <fieldset>
+        <legend>Select Your Desired Sushi Roll(s)</legend>
+        <div id="sushiRolls">
+            <div>
+                <input type="checkbox" id="sushi1" name="sushi" value="10.00" />
+                <label for="sushi1">Dragon Roll </label>
+            </div>
+            <div>
+                <input type="checkbox" id="sushi3" name="sushi" value="13.00" />
+                <label for="sushi3">Rainbow Roll </label>
+            </div>
+            <div>
+                <input type="checkbox" id="sushi2" name="sushi" value="14.00" />
+                <label for="sushi2">  Playboy Roll </label>
+            </div>
+            <div>
+                <input type="checkbox" id="sushi4" name="sushi" value="12.00" />
+                <label for="sushi4">Crunchy Roll </label>
+            </div>
+            <div>
+                <input type="checkbox" id="sushi5" name="sushi" value="12.00" />
+                <label for="sushi5">Hoosier Roll</label>
+            </div>
+        </div>
+        <br>
+        <button type="button" id="total">Calculate Total</button>
+        <p>Total Cost: <span id="totalCost">$0.00</span></p>
+    </fieldset>
+    <div id="discountMessage"></div>
+    <div id="locationMessage"></div>
+    <form id="orderForm" method="get">
+        <fieldset>
+            <legend>Customer Information</legend>
+            <label for="name">Customer Name:</label>
+            <input type="text" id="name" name="name"><br>
+            <!--Requirement 23: placeholder portion !-->
+            <label for="email">Customer Email:</label>
+            <input type="email" id="email" name="email" placeholder="ValuedCustomer@gmail.com"><br>
+
+
+
+            <label for="phone">Best Contact Number:</label>
+            <input type="tel" id="phone" name="phone" ><br>
+
+            <label for="special-request">Special Request:</label>
+            <textarea id="special-request" name="special-request"></textarea><br>
+            
+            <label for="address">Billing Address:</label>
+            <input type="text" id="address" name="address"><br>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select Country</option>
+             </select><br>
+        </fieldset>
+        
+            <fieldset>
+            <legend>Order Details</legend>
+            <label>Choose your payment method:</label><br>
+            <input type="radio" id="credit" name="payment" value="credit">
+            <label for="credit">Credit Card</label><br>
+            <input type="radio" id="debit" name="payment" value="debit">
+            <label for="debit">Debit Card</label><br>
+            <input type="radio" id="applepay" name="payment" value="applepay">
+            <label for="paypal">Apple Pay </label><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+    <!--Requirement22: Create an output area-->
+    <div id="outputArea"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="SushiFinal.js" ></script>
+</body>
+</html>

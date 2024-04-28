@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define values for t
+t_values = np.linspace(-2*np.pi, 2*np.pi, 100)
+
+# Calculate corresponding points
+x_values = np.sin(t_values)
+y_values = t_values
+
+# Plot the points
+plt.plot(x_values, y_values, label='r(t) = (sin(t), t)')
+plt.scatter([0, 0, 0, 0, 0], [-2*np.pi, -np.pi, -np.pi/2, 0, np.pi/2], color='red', label='Selected Points')
+plt.title('Vector r(t) = (sin(t), t)')
+plt.xlabel('sin(t)')
+plt.ylabel('t')
+plt.grid(True)
+plt.legend()
+plt.show()
